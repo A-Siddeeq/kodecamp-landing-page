@@ -12,7 +12,7 @@ const Projects = () => {
 
     <div className='px-6'>
       {/* OUR PROJECTS TITLE */}
-    <div className='pb-4 lg:pl-[135px]'>
+    <div className='pb-4'>
       <h1 className='font-extralight text-[64px] leading-[64px] text-[#BDBDBD]'>Our</h1>
       <h1 className='font-bold text-[64px] leading-[64px]'>Projects</h1>
      </div>
