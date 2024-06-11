@@ -13,6 +13,7 @@ import galImage9 from '../assets/gal-image9.png'
 import galImage10 from '../assets/gal-image10.png'
 import back from '../assets/arrowleft.svg'
 import next from '../assets/arrowright.svg'
+import pageSeperator from '../assets/pageSeperator.svg'
 
 const Gallery = () => {
   return (
@@ -38,13 +39,20 @@ const Gallery = () => {
               <img src={galImage9} alt="" className=' w-full h-full object-cover'/>
               <img src={galImage10} alt="" className=' w-full h-full object-cover'/>
             </div>
-            <div className='flex justify-center my-6'>
+            <div className='flex flex-col md:flex-row justify-start items-center my-6'>
+             <div className='flex gap-x-5 md:mr-10 py-2'>
+              <span className='text-[#333333]'>01</span>
+              <img src={pageSeperator} alt="" />
+              <span className='text-[#BDBDBD]'>05</span>
+            </div> 
+            <div className='flex'>           
             <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center'>
-                <img src={back} alt="" />
+                <img src={back} alt="" width={'24px'} height={'24px'}/>
             </button>
-            <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center'>
-                <img src={next} alt="" />
+            <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center bg-[#F9F9F9]'>
+                <img src={next} alt=""  width={'24px'} height={'24px'}/>
             </button>
+            </div>
         </div>
             </div>
 

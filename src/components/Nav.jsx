@@ -4,30 +4,27 @@ import { Link } from 'react-router-dom';
 import { useState } from "react"; 
 
 export default function Nav() {
-  const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <div className="flex items-center justify-between border-gray-400 py-8">
       <a href="/">
-       <img src={logo} alt="logo" height={42} width={69}/>
+       <img src={logo} alt="logo" height={42} width={69} className='ml-12'/>
       </a>
       <nav className='py-4 px-6'>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2"
-            onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
-          >
+            onClick={() => setIsNavOpen((prev) => !prev)} >
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
           </div>
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-            <img src="{logo}" alt="" width={100} height={100}/>
             <div
-              className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
-              onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
-            >
+              className="CROSS-ICON absolute top-0 right-0 p3x-8 py-8"
+              onClick={() => setIsNavOpen(false)} >
               <svg
                 className="h-8 w-8 text-gray-600"
                 viewBox="0 0 24 24"
