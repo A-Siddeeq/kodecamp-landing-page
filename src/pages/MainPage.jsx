@@ -33,10 +33,10 @@ const MainPage = () => {
               <span className='text-[#BDBDBD]'>05</span>
             </div> 
             <div className='flex'>           
-            <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center'>
+            <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center items-center'>
                 <img src={back} alt="" width={'24px'} height={'24px'}/>
             </button>
-            <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center bg-[#F9F9F9]'>
+            <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center items-center bg-[#F9F9F9]'>
                 <img src={next} alt=""  width={'24px'} height={'24px'}/>
             </button>
             </div>
@@ -44,7 +44,7 @@ const MainPage = () => {
          </div>
          <div className='relative w-3/4 md:w-1/2'>
           <img src={image1} alt="" className='md:w-["770px"] md:h-["830px"]'/>
-          <button className='flex justify-evenly items-center text-[12px] tracking-widest absolute w-[200px] h-[71px] bottom-0 bg-white'>VIEW PROJECTS
+          <button className='flex justify-evenly items-center text-[12px] tracking-widest absolute w-[140px] md:w-[200px] h-[45px] md:h-[71px] bottom-0 bg-white'>VIEW PROJECTS
           <svg width="20" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M3.9353 11.5C3.9353 11.2239 4.15916 11 4.4353 11L20.4353 11C20.7114 11 20.9353 11.2239 20.9353 11.5C20.9353 11.7761 20.7114 12 20.4353 12L4.4353 12C4.15916 12 3.9353 11.7761 3.9353 11.5Z" fill="#333333"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5817 7.64645C16.777 7.45118 17.0936 7.45118 17.2889 7.64645L21.1424 11.5L17.2889 15.3536C17.0936 15.5488 16.777 15.5488 16.5817 15.3536C16.3865 15.1583 16.3865 14.8417 16.5817 14.6464L19.7282 11.5L16.5817 8.35355C16.3865 8.15829 16.3865 7.84171 16.5817 7.64645Z" fill="#333333"/>
@@ -82,7 +82,7 @@ const MainPage = () => {
         {/* MAIN FOCUS SECTION */}
         <div className='flex flex-col md:h-[270px] py-12'>
           <div>
-            <h1 className='font-extralight text-[64px] leading-[64px] py-6 text-[#BDBDBD] text-wrap'>Main Focus/Mission Statement</h1>
+            <h1 className='font-extralight text-[55px] md:text-[64px] leading-[64px] py-6 text-[#BDBDBD] text-wrap'>Main Focus/Mission Statement</h1>
 
             <div className='flex flex-col md:flex-row py-4 justify-around items-center'>
               <div className='flex items-center m-6 md:m-0'>
@@ -101,29 +101,72 @@ const MainPage = () => {
         </div>
 
         {/* PROJECTS SECTION */}
-        <div className='flex flex-col py-12 md:mt-12'>
+        {/* //PROJECTS IN MOBILE VIEW */}
+        <div className='flex md:hidden flex-col py-12 md:mt-12'>
+          <div>
+            <h1 className='font-extralight text-[64px] leading-[64px] py-6 text-[#BDBDBD]'>Our Projects</h1>
+
+            <div className='flex flex-col gap-y-4'>
+             
+             
+            <div className="relative w-full h-48 ">
+      <img 
+        src={image5} 
+        alt="Sample Project" 
+        className="w-full h-full object-cover" 
+      />
+      <img src={image5over} alt="" className='absolute top-0 h-full w-full'/>
+      <div className="absolute inset-5 flex flex-col justify-center items-start text-white">
+        <h1 className="text-4xl font-bold">Sample Project</h1>
+        <button className="m-1">
+          VIEW MORE ➔
+        </button>
+      </div>
+    </div>
+
+              <img src={image6} alt="" className='w-full h-48 object-cover'/>
+  
+
+              <img src={image7} alt="" className='w-full h-48 object-cover'/>
+
+
+
+              <img src={image8} alt="" className='w-full h-48 object-cover'/>
+
+
+              <img src={image9} alt="" className='w-full h-48 object-cover'/>
+
+
+            </div>
+
+          </div>
+          <button className='w-[200px] h-[71px] text-white bg-[#2C2C2C] my-2 self-end'>ALL PROJECTS</button>
+          </div>
+
+        {/* //PROJECTS IN DESKTOP VIEW */}
+        <div className='hidden md:flex flex-col py-12 md:mt-12'>
           <div>
             <h1 className='font-extralight text-[64px] leading-[64px] py-6 text-[#BDBDBD]'>Our Projects</h1>
 
             <div className='grid grid-cols-2 md:grid-cols-6 gap-4 items-center'>
              
              
-              <div className='relative md:col-span-3 w-full h-full '>
-              <img src={image5} alt="" className='object-cover'/>
-              <img src={image5over} alt="" className='absolute top-0'/>
-              <div className='absolute top-0 left-0 right-0 text-white'>
-                <div className='flex flex-col items-start ml-[20%]'>
-                  <h1 className='lg:text-[50px] xl:text-[64px] md:max-w-[233px] font-[700]'>Sample Project</h1>
-              <button className='flex justify-start my-6 ml-0 text-[12px] tracking-widest w-[200px] h-[71px]'>READ MORE          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.5C3 11.2239 3.22386 11 3.5 11L19.5 11C19.7761 11 20 11.2239 20 11.5C20 11.7761 19.7761 12 19.5 12L3.5 12C3.22386 12 3 11.7761 3 11.5Z" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6464 7.64645C15.8417 7.45118 16.1583 7.45118 16.3536 7.64645L20.2071 11.5L16.3536 15.3536C16.1583 15.5488 15.8417 15.5488 15.6464 15.3536C15.4512 15.1583 15.4512 14.8417 15.6464 14.6464L18.7929 11.5L15.6464 8.35355C15.4512 8.15829 15.4512 7.84171 15.6464 7.64645Z" fill="white"/>
-                </svg>
-            </button>
-            </div>
-
-              </div>
-
-              </div>
+            <div className="relative md:col-span-3 w-full h-full ">
+      <img 
+        src={image5} 
+        alt="Sample Project" 
+        className="w-full h-full object-cover" 
+      />
+      {/*OVERLAY IMAGE */}
+      <img src={image5over} alt="" className='absolute top-0'/>
+      {/*OVERLAY TEXTS*/}
+      <div className="absolute inset-20 flex flex-col gap-y-5 justify-center items-start text-white">
+        <h1 className="text-4xl font-bold w-[233px] h-[128px] leading-[64px] text-[64px]">Sample Project</h1>
+        <button className="md:m-0">
+          VIEW MORE    ➔
+        </button>
+      </div>
+    </div>
 
               <img src={image6} alt="" className='md:col-span-3 w-full h-full object-cover'/>
   
@@ -139,8 +182,9 @@ const MainPage = () => {
 
 
             </div>
+
           </div>
-          <button className='w-[200px] h-[71px] text-white bg-[#2C2C2C] my-2 md:self-end'>ALL PROJECTS</button>
+          <button className='w-[200px] h-[71px] text-white bg-[#2C2C2C] my-2 self-end'>ALL PROJECTS</button>
         </div>
 
                 {/* CONTACT US SECTION */}

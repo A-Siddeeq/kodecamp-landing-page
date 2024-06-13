@@ -75,10 +75,10 @@ const Projects = () => {
               <span className='text-[#BDBDBD]'>05</span>
             </div> 
             <div className='flex'>           
-            <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center'>
+            <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center items-center'>
                 <img src={back} alt="" width={'24px'} height={'24px'} />
             </button>
-            <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center bg-[#F9F9F9]'>
+            <button className='w-[53px] h-[53px] border-2 mx-2 flex justify-center items-center bg-[#F9F9F9]'>
                 <img src={next} alt=""  width={'24px'} height={'24px'} />
             </button>
             </div>

@@ -14,7 +14,7 @@ const Footer = () => {
             <img src={footerlogo} alt="" height={94} width={145} className='py-6'/>
         </div>
 
-        <div className='flex gap-6 md:ml[-50px] lg:ml-[-200px]'>
+        <div className='flex gap-6 md:ml[-50px] lg:ml-[-200px] mx-4'>
          <ul className='w-1/2 md:w-min'>
             <p className='leading-10 md:leading-[5] text-[16px] font-[700]'>Information</p>
             <li className='py-2'>Main</li>
@@ -24,7 +24,7 @@ const Footer = () => {
             <li className='py-2'>Contact</li>
          </ul>
 
-         <ul className='w-1/2 md:w-min'>
+         <ul className='w-1/2 md:w-min '>
             <p className='leading-10 md:leading-[5] text-[16px] font-[700]'>Contacts</p>
             <li className='py-2'>1234 Sample Street
                 Austin Texas 78704</li>
