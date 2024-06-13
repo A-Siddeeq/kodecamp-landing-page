@@ -19,11 +19,11 @@ const Projects = () => {
      </div>
 
      {/* SAMPLE PROJECTS */}
-     <div className='flex flex-col'>
-     <div className='flex flex-col lg:flex-row-reverse items-center md:items-stretch lg:w-[1200px] py-12'>
-     <div className='w-3/4 lg:w-1/2  bg-[#FBFBFB] flex flex-col justify-between items-center lg:ml-20'>
+     <div className='flex flex-col items-center gap-y-4'>
+     <div className='flex flex-col items-center md:items-stretch lg:flex-row-reverse lg:w-[1200px] py-12 bg-[#FBFBFB] lg:h-fit'>
+     <div className='w-3/4 lg:w-1/2   flex flex-col justify-between items-center lg:ml-20'>
      <img src={projImg1} alt="" className='lg:w-["670px"] lg:h-["435px"] inline-block lg:hidden'/>
-      <h1 className='font-extralight text-[40px] leading-[46px] text-[#BDBDBD] py-2 lg:py-0'>Sample Project 1</h1>
+      <h1 className='font-extralight text-[40px] leading-[46px] text-[#BDBDBD]  py-2 lg:py-0'>Sample Project </h1>
       <p className='font-light leading-[25px] text-[16px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
          when an unknown printer took a galley of type and
@@ -50,10 +50,10 @@ const Projects = () => {
          </div>
         </div>
 
-        <div className='flex flex-col items-center md:items-stretch lg:flex-row-reverse lg:w-[1200px] py-12'>
-     <div className='w-3/4 lg:w-1/2  bg-[#FBFBFB] flex flex-col justify-between items-center lg:ml-20'>
+        <div className='flex flex-col items-center md:items-stretch lg:flex-row-reverse lg:w-[1200px] py-12 bg-[#FBFBFB] lg:h-fit'>
+     <div className='w-3/4 lg:w-1/2   flex flex-col justify-between items-center lg:ml-20'>
      <img src={projImg3} alt="" className='lg:w-["670px"] lg:h-["435px"] inline-block lg:hidden'/>
-      <h1 className='font-extralight text-[40px] leading-[46px] text-[#BDBDBD] py-2 lg:py-0'>Sample Project 3</h1>
+      <h1 className='font-extralight text-[40px] leading-[46px] text-[#BDBDBD]  py-2 lg:py-0'>Sample Project 3</h1>
       <p className='font-light leading-[25px] text-[16px]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
          when an unknown printer took a galley of type and
@@ -68,7 +68,7 @@ const Projects = () => {
        
 
             {/**PREV AND NEXT BUTTON */}
-            <div className='flex flex-col md:flex-row justify-start items-center my-6'>
+            <div className='flex flex-col md:flex-row justify-center items-center my-6 md:w-[570px] mx-0'>
              <div className='flex gap-x-5 md:mr-10 py-2'>
               <span className='text-[#333333]'>01</span>
               <img src={pageSeperator} alt="" />

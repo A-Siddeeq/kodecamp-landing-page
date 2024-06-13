@@ -56,10 +56,10 @@ const MainPage = () => {
 
         {/*ABOUT SECTION */}
         <div className='flex flex-col-reverse md:flex-row items-center py-12 bg-[#F9F9F9]'>
-          <div className='grid grid-cols-3 md:grid-cols-2 gap-4 py-4 justify-center items-center w-3/4 md:w-1/2'>
-          <img src={image2} alt="" className='md:w-["770px"] md:h-["830px"] w-full h-full object-cover'/>
-          <img src={image3} alt="" className='md:w-["770px"] md:h-["830px"] w-full h-full object-cover'/>
-          <img src={image4} alt="" className='md:w-["770px"] md:h-["830px"] w-full h-full object-cover'/>
+          <div className='grid grid-cols-3 md:grid-cols-2 gap-4 py-4 justify-center items-center w-3/4 md:w-1/2 md:h-[465px]'>
+          <img src={image2} alt="" className='md:w-["270px"] md:h-["285px"] w-full h-full object-cover'/>
+          <img src={image3} alt="" className='md:w-["270px"] md:h-["345px"] w-full h-full object-cover justify-self-center self-center md:mt-[50%]'/>
+          <img src={image4} alt="" className='md:w-["270px"] md:h-["140px"] w-full h-full object-cover'/>
          </div>
          <div className='flex flex-col items-center justify-start md:gap-10 md:w-1/2'>
           <h1 className='font-extralight text-[64px] leading-[64px] py-6 text-[#BDBDBD] self-start md:self-center'>About</h1>
